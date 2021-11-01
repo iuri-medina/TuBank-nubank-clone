@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #8F23D6;
+}
+
+
+#container {
+    height: 530px;
+    width: 448px; 
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+#form-container {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+}
+
+
+/*FAÇA SEU LOGIN H1*/
+
+.title {
+    font-family: 'Gotham', 'Roboto';
+    display: block;
+    margin: -100px 0 65px 0;
+}
+
+
+
+
+/*INPUTS*/
+
+input {
+    display: block;
+}
+
+input[type="password"], input[type="text"] {
+    width: 250px;
+    height: 40px;
+    padding: 4px;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    
+    
+    border: none;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+input[type="password"], input[type="text"] {
+    margin-bottom: 5px;
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+    border: 2px solid #8F23D6;
+}
+
+/*FLOATING LABELS*/
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+    top: 0;
+    bottom: 10px;
+    left: 10px;
+    font-size: 11px;
+    opacity: 1;
+    color: #8F23D6;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 40px;
+    top: 32px;
+    font-size: 14px;
+    transition: 0.2s ease all;
+}
+
+.floating-label-group {
+    position: relative;
+    padding-top: 15px;
+}
+
+/*Show password field*/
+
+.show-check {
+    display: inline;
+    accent-color: #8F23D6;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.show-label {
+    font-size: 12px;
+    margin-bottom: 15px;
+    user-select: none;
+    cursor: pointer; 
+}
+
+/*Login Button*/
+
+#login-btn {
+    width: 300px;
+    height: 60px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+    border-radius: 10px;
+    border: 1px solid #8F23D6;
+
+
+    background-color: #fff;
+    color: #8F23D6;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+#login-btn:hover {
+    opacity: 1;
+    background-color: #8F23D6;
+    color: #fff;
+}
+
+
+
+
+
+/*Icones input*/
+
+input[type="text"].email-input {
+    background-image: url(../images/user.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 8px;
+}
+
+input[type="password"].password-input, input[type="text"].password-input {
+    background-image: url(../images/padlock.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 8px;   
+}

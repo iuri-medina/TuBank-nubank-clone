@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        @import url('http://fonts.cdnfonts.com/css/gotham');
+    </style>
+
+    <link rel="stylesheet" href="style/login.css">
+
+
+</head>
+<body>
+
+    <div id="container">
+
+        <h1 class="title">Faça seu login</h1>
+
+
+        <div id="form-container">
+
+            <form>
+            
+                <div class="floating-label-group">
+                    <input type="text" name="email" autocomplete="off" id="email" class="email-input" required>
+                    <label for="email"class="floating-label">Email</label>
+                </div>
+
+                <div class="floating-label-group">
+                    <input type="password" name="senha" id="senha" autocomplete="off" required class="password-input">
+                    <label for="senha" class="floating-label">Senha</label>
+                </div>
+                
+
+
+                <input type="checkbox" class="show-check" onclick="showPassword()" id="show">
+                <label for="show" class="show-label">Mostrar senha</label>
+                
+
+                <button id="login-btn">Login</button>
+                
+            </form>
+
+        </div>
+
+    </div>
+    <script>
+        // ------Show password------
+
+        function showPassword() {
+            let a = document.getElementById('senha')
+            if (a.type === 'text') {
+                a.type = 'password'
+            } else {
+                a.type = 'text'
+            }
+        }
+        
+        showPassword()
+        
+        // --------------------------
+    </script>
+    
+</body>
+</html>
