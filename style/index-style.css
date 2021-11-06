@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    /*border: 1px solid red;*/
 }
 
 body {
@@ -14,12 +13,11 @@ body {
 #header {
     width: 100%;
     height: 56px;
-    position: relative;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
-    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
 }
 
 #icon-menu {
@@ -30,18 +28,23 @@ body {
     margin-left: 20px;
 }
 
+#nav-menu ul {
+    width: 1200px;
+}
+
 
 #nav-menu li{
-    padding: 20px;
-    display: inline;
     width: 96px;
     height: 56px;
+
+    display: inline;
+    padding: 20px;
 }
 
 #nav-menu li a {
+    color: rgb(31, 31, 31);
     font-weight: bold;
     text-decoration: none;
-    color: rgb(31, 31, 31);
 }
 
 #nav-menu li a:hover {
@@ -50,7 +53,7 @@ body {
 
 .login-header {
     position: relative;
-    margin-left: 35%;
+    margin-left: 28.5%;
     font-weight: bold;
 }
 
@@ -65,37 +68,49 @@ body {
 /*MAIN CONTENT*/
 
 #container {
-    height: 550px;
+    height: 900px;
+
+    background-color: #ebebeb;
+
     display: flex;
     justify-content: stretch;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #f5f5f5;
 }
 
 .row {
     width: 33%;
     height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .row-content {
-    width:330px;
-    height: 335px;
-    padding: 5px;   
+    width: 100%;
+    height: 100%;
+    padding: 20px; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
 }
 
 /*TEXT FIELD ROW*/
 
 .row-content .card-h1 {
+    display: block;
     font-size: 20px;
     margin-bottom: 35px;
+    margin-left: -168px;
 }
 
 .row-content .card-h2 {
+    width: 400px;
+    margin-left: 50px;
     font-size: 45px;
 }
 
@@ -107,8 +122,10 @@ body {
     width: 300px;
     height: 300px;
     padding: 50px 10px 10px 45px;
-    background-color: #fff;
+
     border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -121,8 +138,9 @@ body {
     width: 250px;
     height: 40px;
     padding: 5px 5px 5px 5px;
-    outline: none;
+
     background-color: #fff;
+    outline: none;
     border: none;
     border-bottom: dotted 1px rgb(184, 183, 183);
     margin-bottom: 40px;
@@ -132,38 +150,43 @@ body {
 .row-content form button {
     width: 250px;
     height: 40px;
-    font-weight: bold;
-    background-color: #fff;
+
     outline: none;
-    border-radius: 20px;
     border: 1px solid #8F23D6;
+    border-radius: 20px;
+
+    background-color: #fff;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .row-content form button:hover {
+    color: #fff;
     background-color: #8F23D6;
     opacity: 1;
     border: none;
-    color: #fff;
 }
 
 /*MASTERCARD TEXT FIELD ROW*/
 
 .row-content .mastercard-h2 {
-    margin-left: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-left: -40%;
     font-size: 45px;
 }
 
 .row-content .mastercard-span {
-    display: inline-block;
     width: 300px;
-    margin-left: 200px;
+    display: inline-block;
+    margin-left: -40%;
     font-size: 20px;
     font-weight: 500;
 }
 
 .row-content .mastercard-span a {
+    color: #8F23D6;
     text-decoration: none;
 }
 
@@ -174,19 +197,23 @@ body {
 
 .row-full-width {
     width: 100%;
-    height: 600px;
-    background-image: url('../images/paul-felberbauer-idNOBU5k_80-unsplash.jpg');
+    height: 100%;
+
+    background-image: url('../images/giorgio-trovato-qlNNYxkKoDc-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 .row-full-width h2 {
     width: 400px;
-    font-size: 45px;
-    margin-top: 200px;
-    margin-left: 100px;
+    margin-top: -5%;
+    margin-left: -70%;
     color: #fff;
+    font-size: 45px;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
+
+
+
 
 
